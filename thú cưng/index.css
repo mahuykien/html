@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fefefe;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+    color: #d00;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #d00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.header-icons a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    background-color: #0078d7;
+    padding: 10px 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.banner {
+    display: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: orange;
+    color: #fff;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+}
+
+.banner-content button {
+    padding: 10px 20px;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    padding: 10px;
+    background-color: #eee;
+    justify-content: space-around;
+}
+
+.filters button {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.menu_web{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(204, 9, 41);
+    margin: 0 auto;
+    font-size: 20px;
+}
+#hiddenContent {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #282424;
+    background-color: #f9f9f9;
+}
+.menu li {
+    display: inline-block; 
+    margin: 0 15px; 
+}
+.menu a {
+    text-decoration: none; 
+    padding: 10px 20px; 
+    color: #333; 
+}
+.menu a:hover {
+    background-color: #ddd; 
+    border-radius: 4px; }
+.root li {
+    list-style: none;
+    float: left;
+    position: relative;
+    display: block;
+    font-weight: bold;
+}
+.root li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0 10px 0 15px;
+    line-height: 50px;
+    display: block;
+}
+.root li a:hover{
+    background-color: rgb(246, 230, 7);
+    color: orange;
+    transform:200px ;
+}
+.submenu{
+    color: rgb(236, 7, 34);
+    background-color: #f5a512;
+    width: 180px;
+    min-height: 90px;
+    position:absolute;
+    display: none;
+
+}
+.submenu li {
+    list-style: none;
+}
+
+.submenu li a {
+    line-height: 40px;
+    font-size: 15px;
+}
+.submenu li a :hover{
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(18, 23, 23);
+    display: block;
+    border:  1px solid #f5a512;
+    text-indent: 10px;
+    line-height: 40px;
+}
+.root>li:hover .submenu {
+    background-color:#50312F;
+    color: #ed0d23;
+    transition: ease-in 0.30;
+    display: block;
+}
+.submenu li a:hover {
+    background-color:#db0404;
+    color:rgb(20, 19, 19);
+    transition: ease-in 0.40;
+}
+
+/* mua hàng */
+
+.product-card button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding:20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #d81b60;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề cột */
+table thead tr {
+    background-color: #38b6b4;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Định dạng từng ô dữ liệu */
+table th, table td {
+    padding: 12px 15px;
+    border: 15px solid #dddddd;
+    width: 25%;
+    text-align: center;
+
+  
+}
+
+/* Định dạng từng hàng dữ liệu */
+table tbody tr {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Định dạng ô Tổng */
+table tbody tr td:last-child {
+    font-weight: bold;
+    color: #e91e63;
+}
